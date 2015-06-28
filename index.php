@@ -1,7 +1,8 @@
 <style>
 <?php
-echo file_get_contents('../teewo/normalize.css');
-echo file_get_contents('../teewo/skeleton.css');
+//echo file_get_contents('../teewo/normalize.css');
+//echo file_get_contents('../teewo/skeleton.css');
+// fixed flhead.php from getting css files derpilly
 ?>
 
 </style>
