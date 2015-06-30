@@ -18,7 +18,7 @@ $theURL = shell_exec($command . "");
 $i = 0;
 foreach(explode("\n",$theURL) as $urn){
 echo $i++;
-echo "<video src='$urn' controls loop width=720 style='float:right;margin-right:1em;'></video>";
+echo "<video src='$urn' preload='none' controls loop width=720 style='float:right;margin-right:1em;'></video>";
 //echo $urn ."<br><br><br>";
 }
 //sleep(4);
