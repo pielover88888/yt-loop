@@ -5,6 +5,7 @@ echo file_get_contents('../teewo/skeleton.css');
 ?>
 
 </style>
+<title>Yt-loop playlist - Riot productions</title>
 
 <?php
 include "../flhead.php";

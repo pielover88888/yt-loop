@@ -6,6 +6,7 @@
 ?>
 
 </style>
+<title>Yt-loop - Riot productions</title>
 
 <?php
 include "../flhead.php";
