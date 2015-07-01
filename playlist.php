@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <style>
 <?php
 echo file_get_contents('../teewo/normalize.css');
@@ -45,3 +47,4 @@ var info = document.getElementById("info").innerHTML = document.getElementById("
 var thing = "<?php echo htmlspecialchars($url); ?>"
 var inf = document.getElementById("input").innerHTML = thing;
 </script>
+</html>
