@@ -38,8 +38,18 @@ $rand = rand(1,1000) + "=" + rand(1,1000);
 
 
 <?php endif; ?>
+<?php
+if(isset($_GET["url"])){
+$message = $_GET["url"] . "<br>\n";
+$message .= file_get_contents('list.html');
+file_put_contents('list.html', $message);
+// file_put_contents("list.txt",$message,FILE_APPEND);
+}
+?>
 <span id="real" style="display:none;">
 <?php include "desc.php"; ?>
+<iframe src="list.html" style="margin-left:10em;width:400px;float:left;height:200px;"></iframe>
+
 </span>
 <script>
 var info = document.getElementById("info").innerHTML = document.getElementById("real").innerHTML;
@@ -47,4 +57,5 @@ var info = document.getElementById("info").innerHTML = document.getElementById("
 var thing = "<?php echo htmlspecialchars($url); ?>"
 var inf = document.getElementById("input").innerHTML = thing;
 </script>
+
 </html>
