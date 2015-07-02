@@ -55,4 +55,5 @@ var info = document.getElementById("info").innerHTML = document.getElementById("
 var thing = "<?php echo htmlspecialchars($url); ?>"
 var inf = document.getElementById("input").innerHTML = thing;
 </script>
+<a style="position: absolute;left: 0;bottom: 0;" href="https://youtu.be/TbiedguhyvM">Do Not Click Me</a>
 </html>
