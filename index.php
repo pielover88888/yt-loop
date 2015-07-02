@@ -46,6 +46,7 @@ file_put_contents('list.html', $message);
 
 <span id="real" style="display:none;">
 <?php include "desc.php"; ?>
+
 <iframe src="list.html" style="margin-left:10em;width:400px;float:left;height:200px;"></iframe>
 </span>
 <script>
