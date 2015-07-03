@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
 <style>
+#list{
+margin-left:10em;
+overflow-y:scroll;
+border:1px solid grey;
+border-radius:5px;
+width:400px;
+float:left;
+height:200px;
+}
 <?php
 //echo file_get_contents('../teewo/normalize.css');
 //echo file_get_contents('../teewo/skeleton.css');
@@ -46,8 +55,9 @@ file_put_contents('list.html', $message);
 
 <span id="real" style="display:none;">
 <?php include "desc.php"; ?>
-
-<iframe src="list.html" style="margin-left:10em;width:400px;float:left;height:200px;"></iframe>
+<div id="list">
+<?= file_get_contents("list.html"); ?>
+</div>
 </span>
 <script>
 var info = document.getElementById("info").innerHTML = document.getElementById("real").innerHTML;
