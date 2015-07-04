@@ -2,7 +2,7 @@
 <html>
 <style>
 #list{
-margin-left:10em;
+margin-left:2em;
 overflow-y:scroll;
 border:1px solid grey;
 border-radius:5px;
@@ -24,7 +24,7 @@ include "../flhead.php";
 if(isset($_GET["url"]) ){
 $url = $_GET["url"];
 $url = explode("&list",$url)[0];
-shell_exec("rm file.mp4" . " > tel.txt");
+//shell_exec("rm file.mp4" . " > tel.txt");
 
 $command = "youtube-dl -g -f 18 " . escapeshellcmd($url);
 $theURL = shell_exec($command . "");
@@ -33,7 +33,7 @@ $theURL = shell_exec($command . "");
 //https://www.youtube.com/watch?v=uw_6_7CRwAs
 $rand = rand(1,1000) + "=" + rand(1,1000);
 ?>
-<div id="info" style="position:absolute;left:1em; width:400px;">
+<div id="info" style="left:0px;position:absolute;margin-left:1em; width:400px;">
 </div>
 
 <?php if(isset($_GET["url"])) : ?>
