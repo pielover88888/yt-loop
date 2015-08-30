@@ -37,7 +37,7 @@ $rand = rand(1,1000) + "=" + rand(1,1000);
 </div>
 
 <?php if(isset($_GET["url"])) : ?>
-<video src="<?= $theURL ?>" controls loop width=720 style="float:right;margin-right:1em;" autoplay autoload>
+<video src="<?= $theURL ?>" controls loop width=480 style="float:right;margin-right:1em;" autoplay autoload>
 
 <?php else : ?>
 
